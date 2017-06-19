@@ -11,6 +11,22 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::name('index')->get('/','VistasController@index');
+Route::name('rEmpresa')->get('/rEmpresa','VistasController@rEmpresa');
+Route::name('flot')->get('/flot','VistasController@flot');
+Route::name('morris')->get('/morris','VistasController@morris');
+Route::name('historico')->get('/historico','VistasController@historico');
+Route::name('obligaciones')->get('/obligaciones','VistasController@obligaciones');
+Route::name('usuarios')->get('/usuarios','VistasController@usuarios');
+Route::name('perfil')->get('/perfil','VistasController@perfil');
+
+Route::name('rEmpre')->post('/rEmpres','VistasController@store');
+
+
+
+
+
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
