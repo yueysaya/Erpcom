@@ -21,8 +21,7 @@ Route::name('usuarios')->get('/usuarios','VistasController@usuarios');
 Route::name('perfil')->get('/perfil','VistasController@perfil');
 
 Route::name('rEmpre')->post('/rEmpres','VistasController@store');
-
-
+Route::name('leer')->post('/leer','ComController@leer');
 
 
 

@@ -4,7 +4,7 @@
 <div id="page-wrapper">
     <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Historico</h1>
+                    <h1 class="page-header">Usuarios</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -15,19 +15,21 @@
                         <div class="panel-body">
                             <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
                                 <thead>
-                                    <tr>
-                                        <th>ID Maestra</th>
+                                    <tr>                                        
                                         <th>Nombre</th>
-                                        <th>Contraseña</th>
+                                        <th>Correo</th>                                        
                                         <th>Telefono</th>
+                                        <th>Cedula</th>
+
                                     </tr>
                                 </thead>
                                 <tbody>
                                     @foreach($users as $user)
                                     <tr class="gradeX">
                                         <td>{{$user->name}}</td>
-                                        <td>{{$user->password}}</td>
-                                        <td class="center">{{$user->telefono}}</td>
+                                        <td>{{$user->email}}</td>
+                                        <td>{{$user->telefono}}</td>
+                                        <td>{{$user->cedula}}</td>
                                     </tr>
                                     @endforeach
                                     

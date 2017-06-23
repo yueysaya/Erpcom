@@ -35,7 +35,7 @@ class VistasController extends Controller
         return view('obligaciones')->with(['users'=>$users]);
     }
     public function usuarios(){
-        $users = User::all();
+         $users = User::all();
         return view('usuarios')->with(['users'=>$users]);
     }
     public function perfil(){

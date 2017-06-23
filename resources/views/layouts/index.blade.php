@@ -51,26 +51,18 @@
                             <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
                             <input id="email" placeholder="Correo" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
 
-                                @if ($errors->has('email'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('email') }}</strong>
-                                    </span>
-                                @endif                                        
+                                                                      
                         </div>
 
                         <div class="input-group{{ $errors->has('password') ? ' has-error' : '' }}">
                             <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
-                            <div class="col-md-6">
+                            
                                 <input id="password" placeholder="Contraseña" type="password" class="form-control" name="password" required>
-
-                                @if ($errors->has('password'))
-                                    <span class="help-block">
-                                        <strong>{{ $errors->first('password') }}</strong>
-                                    </span>
-                                @endif                                        
+                                <div class="col-md-6">
+                                                                       
                             </div>
                         </div>
-                        
+                       
                         <button type="submit" class="btn btn-primary">Entrar</button>
                         
                         <div class="form-group">

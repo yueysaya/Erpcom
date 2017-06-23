@@ -15,20 +15,21 @@
                         <div class="panel-body">
                             <table width="100%" class="table table-striped table-bordered table-hover" id="dataTables-example">
                                 <thead>
-                                    <tr>
-                                        <th>ID Maestra</th>
+                                    <tr>                                        
                                         <th>Nombre</th>
-                                        <th>Contraseña</th>
+                                        <th>Correo</th>                                        
                                         <th>Telefono</th>
+                                        <th>Cedula</th>
+
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach($usuarios as $usuario)
+                                    @foreach($users as $user)
                                     <tr class="gradeX">
-                                        <td>{{$usuario->id_maestra}}</td>
-                                        <td>{{$usuario->nombre}}</td>
-                                        <td>{{$usuario->contraseña}}</td>
-                                        <td class="center">{{$usuario->telefono}}</td>
+                                        <td>{{$user->name}}</td>
+                                        <td>{{$user->email}}</td>
+                                        <td>{{$user->telefono}}</td>
+                                        <td>{{$user->cedula}}</td>
                                     </tr>
                                     @endforeach
                                     
